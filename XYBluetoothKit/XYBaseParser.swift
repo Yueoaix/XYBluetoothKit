@@ -19,33 +19,33 @@ public enum XYBluetoothParserError: Error {
 open class XYBaseParser:NSObject, XYParserSession {
     
     // 重连次数 -1为无限次
-    var autoReconnectCount: Int = -1
+    public var autoReconnectCount: Int = -1
     
     // 是否自动重连
-    @objc open var isAutoReconnect = false
+    public var isAutoReconnect = false
     
     // 是否已连接
-    var isConnected: Bool {
+    public var isConnected: Bool {
         return peripheral.state == CBPeripheralState.connected
     }
     
     // 外设对象
-    @objc open var peripheral: CBPeripheral
+    public var peripheral: CBPeripheral
     
     // 连接成功回调
-    var connectSuccess: XYCentralManager.ConnectSuccessHandle?
+    public var connectSuccess: XYCentralManager.ConnectSuccessHandle?
     
     // 连接失败回调
-    var connectFail: XYCentralManager.ConnectFailHandle?
+    public var connectFail: XYCentralManager.ConnectFailHandle?
     
     // 断开连接回调
-    var disConnectd: XYCentralManager.DisConnectHandle?
+    public var disConnectd: XYCentralManager.DisConnectHandle?
     
-    var containCharacteristics = [CBCharacteristic].init()
+    public var containCharacteristics = [CBCharacteristic].init()
     
-    var retriveServiceIndex = 0
+    public var retriveServiceIndex = 0
     
-    var completeHandle: (() -> Void)?
+    public var completeHandle: (() -> Void)?
     
     /// 初始化
     @objc public init(discovery: XYDiscovery) {
@@ -54,7 +54,7 @@ open class XYBaseParser:NSObject, XYParserSession {
     }
     
     /// 设置连接回调
-    func connectHandle(successHandle: XYCentralManager.ConnectSuccessHandle?, disConnectHandle: XYCentralManager.DisConnectHandle?, failHandle: XYCentralManager.ConnectFailHandle?) {
+    @objc public func connectHandle(successHandle: XYCentralManager.ConnectSuccessHandle?, disConnectHandle: XYCentralManager.DisConnectHandle?, failHandle: XYCentralManager.ConnectFailHandle?) {
         
         self.connectSuccess = successHandle
         self.connectFail = failHandle
@@ -62,11 +62,11 @@ open class XYBaseParser:NSObject, XYParserSession {
     }
     
     /// 接受数据
-    func reciveData(data:Data, peripheral:CBPeripheral, characteristic:CBCharacteristic){
+    @objc open func reciveData(data:Data, peripheral:CBPeripheral, characteristic:CBCharacteristic){
     }
     
     /// 当发数据到外设的某一个特征值上面,并且响应的类型是CBCharacteristicWriteWithResponse,会走此方法响应发送是否成功
-    func didWriteValue(_ peripheral:CBPeripheral,characteristic:CBCharacteristic,error:Error?) {
+    @objc open func didWriteValue(_ peripheral:CBPeripheral,characteristic:CBCharacteristic,error:Error?) {
         
     }
     
@@ -85,7 +85,7 @@ open class XYBaseParser:NSObject, XYParserSession {
     ///
     /// - Parameter characterUUIDStr: UUID
     /// - Throws: 未发现UUID对应特征
-    func readCharacteristic(_ characterUUIDStr: String) throws {
+    @objc public func readCharacteristic(_ characterUUIDStr: String) throws {
         
         do {
             
@@ -104,7 +104,7 @@ open class XYBaseParser:NSObject, XYParserSession {
     ///   - characterUUIDStr: UUID
     ///   - withResponse: 是否有响应
     /// - Throws: 未发现UUID对应特征
-    func writeData(_ data: Data, characterUUIDStr: String, isResponse: Bool) throws {
+    @objc public func writeData(_ data: Data, characterUUIDStr: String, isResponse: Bool) throws {
         
         do {
             
@@ -122,7 +122,7 @@ open class XYBaseParser:NSObject, XYParserSession {
     /// - Parameter UUIDStr: UUID
     /// - Returns: 特征对象
     /// - Throws: 未发现UUID对应特征
-    private func prepareForAction(_ UUIDStr: String) throws -> CBCharacteristic {
+    func prepareForAction(_ UUIDStr: String) throws -> CBCharacteristic {
 
         let results = containCharacteristics.compactMap { (characteristic) -> CBCharacteristic? in
             if characteristic.uuid.uuidString.lowercased().hasPrefix(UUIDStr.lowercased()) {

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
 #
 
 spec.name         = "XYBluetoothKit"
-spec.version      = "1.0.0"
+spec.version      = "1.0.3"
 spec.summary      = "一个简单易用的蓝牙库."
 
 # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ spec.platform     = :ios, "8.0"
 #  Supports git, hg, bzr, svn and HTTP.
 #
 
-spec.source       = { :git => "https://github.com/Yueoaix/XYBluetoothKit.git", :tag => "1.0.0" }
+spec.source       = { :git => "https://github.com/Yueoaix/XYBluetoothKit.git", :tag => "1.0.3" }
 
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,6 +89,7 @@ spec.source       = { :git => "https://github.com/Yueoaix/XYBluetoothKit.git", :
 #  Not including the public_header_files will make all headers public.
 #
 
+spec.swift_version = "4.2"
 spec.source_files  = "XYBluetoothKit", "*.{h,m,swift}"
 spec.exclude_files = "Classes/Exclude"
 

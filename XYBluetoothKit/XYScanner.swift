@@ -9,7 +9,7 @@
 import UIKit
 import CoreBluetooth
 
-class XYScanner: NSObject {
+open class XYScanner: NSObject {
 
     var centralManager: CBCentralManager?
     
@@ -17,13 +17,13 @@ class XYScanner: NSObject {
     var servicesUUIDStrs: [String]?
     
     // 扫描定时器
-    private var scanTimer: Timer?
+    var scanTimer: Timer?
+
+    // 扫描完成回调
+    var completeHandle: XYCentralManager.ScanCompleteHandle?
     
     // 发现对象回调
-    private var discoveryHandle: XYCentralManager.ScanDiscoveryHandle?
-    
-    // 扫描完成回调
-    private var completeHandle: XYCentralManager.ScanCompleteHandle?
+    var discoveryHandle: XYCentralManager.ScanDiscoveryHandle?
 
     /// 扫描
     func scanWithDuration(serviceUUIDStrs: [String]?,_ duration: TimeInterval, discoveryHandle: XYCentralManager.ScanDiscoveryHandle?, completeHandle: XYCentralManager.ScanCompleteHandle?) -> Bool {
@@ -55,7 +55,7 @@ class XYScanner: NSObject {
     }
     
     /// 获取可能被系统蓝牙连接的外设
-    private func retriveConnectedDiscovery() {
+    func retriveConnectedDiscovery() {
         
         let servicesUUIDs = servicesUUIDStrs?.map({ (UUIDStr) -> CBUUID in
             return CBUUID.init(string: UUIDStr)
@@ -72,12 +72,12 @@ class XYScanner: NSObject {
         }
     }
     
-    @objc private func timeOut() {
+    @objc func timeOut() {
         invalidateTimer()
         stopScan()
     }
     
-    private func invalidateTimer() {
+    func invalidateTimer() {
         scanTimer?.invalidate()
         scanTimer = nil
     }

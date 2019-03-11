@@ -10,19 +10,19 @@ import UIKit
 import CoreBluetooth
 
 /// 蓝牙扫描对象
-public class XYDiscovery: NSObject {
+open class XYDiscovery: NSObject {
     
     // 外设对象
-    @objc public var peripheral: CBPeripheral
+    public var peripheral: CBPeripheral
     
     // 广播信息
-    @objc public var advertisementData: [String : AnyObject]?
+    public var advertisementData: [String : AnyObject]?
     
     // 信号强度
-    @objc public var RSSI: Int 
+    public var RSSI: Int
     
     // 设备名称
-    @objc public var name: String? {
+    public var name: String? {
         return peripheral.name
     }
     
