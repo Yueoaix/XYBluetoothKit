@@ -10,7 +10,7 @@ import UIKit
 import CoreBluetooth
 
 /// 蓝牙中心端管理类
-public class XYCentralManager: NSObject {
+open class XYCentralManager: NSObject {
     
     // 扫描发现设备block 类型
     public typealias ScanDiscoveryHandle = ((_ discovery: XYDiscovery,_ name: String) -> Void)
@@ -41,16 +41,16 @@ public class XYCentralManager: NSObject {
         return XYCentralManager.manager
     }
     
-    private override init() {
+    override init() {
         super.init()
         _ = centerManager
     }
     
     // 恢复外设连接Block
-    @objc public var restoreStateHandle: (([XYDiscovery]) -> Void)?
+    public var restoreStateHandle: (([XYDiscovery]) -> Void)?
     
     // 获取设备蓝牙状态值
-    @objc public var centralState:CBCentralManagerState {
+    public var centralState:CBCentralManagerState {
         get {
             
             return CBCentralManagerState.init(rawValue: centerManager.state.rawValue) ?? .unknown
@@ -58,7 +58,7 @@ public class XYCentralManager: NSObject {
     }
     
     // CBCentralManager对象
-    @objc public lazy var centerManager:CBCentralManager = {
+    public lazy var centerManager:CBCentralManager = {
         let bleQueue = DispatchQueue(label: "com.zhong.XYBluetoothKit", attributes: [])
         var centerManager = CBCentralManager.init(delegate: self.centralProxy, queue: bleQueue, options: [CBCentralManagerOptionShowPowerAlertKey : true,CBCentralManagerOptionRestoreIdentifierKey:XYCentralManager.XYRestoreIdentifier])
         return centerManager
@@ -70,13 +70,13 @@ public class XYCentralManager: NSObject {
     }()
     
     // 扫描对象
-    private lazy var scanner:XYScanner = {
+    lazy var scanner:XYScanner = {
         let scanner = XYScanner.init()
        return scanner
     }()
     
     // 连接对象
-    private lazy var connecter:XYConnecter = {
+    lazy var connecter:XYConnecter = {
         let connecter = XYConnecter.init()
         return connecter
     }()
@@ -86,15 +86,15 @@ public class XYCentralManager: NSObject {
         centerManager.delegate = centralProxy
     }
     
-    // 设备蓝牙状态监听Block
-    private var centralStateHandle: ((_ state: CBCentralManagerState) -> Void)?
-    
     /// 监听蓝牙状态
     ///
     /// - Parameter centralStateHandle: 蓝牙状态回调
     @objc public func centralState(_ centralStateHandle: ((_ state: CBCentralManagerState) -> Void)?) {
         self.centralStateHandle = centralStateHandle
     }
+    
+    // 设备蓝牙状态监听Block
+    public var centralStateHandle: ((_ state: CBCentralManagerState) -> Void)?
     
     /// 扫描蓝牙设备
     ///
