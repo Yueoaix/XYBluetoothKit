@@ -93,7 +93,7 @@ centralManager.cancelAllConnect()
 ```
 
 ### 6.蓝牙恢复
-####据WWDC2013视频介绍,因为内存紧张或其他原因,app在后台被杀掉,系统也会自动帮我们重新启动app进行蓝牙数据传输
+据WWDC2013视频介绍,因为内存紧张或其他原因,app在后台被杀掉,系统也会自动帮我们重新启动app进行蓝牙数据传输
 AppDelegate.swift
 ```swift
 
