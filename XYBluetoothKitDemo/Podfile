@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'XYBluetoothKitDemo' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  inhibit_all_warnings!
+  use_frameworks!
+
+  # Pods for XYBluetoothKitDemo
+pod 'XYBluetoothKit', '~> 1.0.6'
+pod 'SnapKit', '~> 4.2.0'
+end

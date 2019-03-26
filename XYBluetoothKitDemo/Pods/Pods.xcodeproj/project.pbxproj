@@ -1,0 +1,920 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		095B9E169090B5D05139300C094DA5AA /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECE11014657D2C967C3BD1984F74A3E /* ConstraintConfig.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0B64E11DD62AC16082ED414753118091 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DAC364780F3ED52B05B2E95A3927F3 /* Constraint.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1061A74AEBBD9B887D3748AABC1469B6 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54D3F2D72F56223C8D3C678322937C1C /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		186370977023B163FD34852326867024 /* XYBluetoothKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D0F9056311169708FF457E402FFF1D /* XYBluetoothKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19F41CF833443D4E911800C7847B6FD1 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB024D8250C863DCE87E0DFE9FEED6 /* ConstraintMaker.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1AA218054E605C266AF2736D333200B2 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C69BF8BCBA9F801E17B4E6C079218C /* SnapKit-dummy.m */; };
+		1AC772C1EC733C9B23525FEF62C0E6F5 /* XYDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9609F48CADFA81366C416120B53AA9B /* XYDiscovery.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		212BA4C8833C19731E334F1C8182FA07 /* XYBluetoothKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD077ED2AAAD87F639BDDDC1C8FEC053 /* XYBluetoothKit-dummy.m */; };
+		26B2B1966F48DE2AB75D04B81881BE0B /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF7428BBD1705108E7C55321D8C5BB5 /* ConstraintMakerFinalizable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2B07743131A768BE8AFFB188B786AFA4 /* XYScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B39114B9EB45026B4721DDA1FEBEAE5 /* XYScanner.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2F0CA09A62DD79CC821B9FAC6D6416CD /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A2E042FAC7B90C0301828F73C4F2D /* ConstraintMakerExtendable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		32454A63B17E5726C66A1176EE69E514 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560C92DC3E91F3D02803C244A501E50 /* ConstraintDSL.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		43D901BD18F329552A437B9B854B1C52 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D6D22D568124A20969FF6220A7B24 /* ConstraintConstantTarget.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		47D741DDC23D66C1702DCD93C6E10A37 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB839C8FE0D88E870429EADF2A8F7E9 /* Debugging.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		49935C33E1EC76079F9767A50E5FDDDD /* XYConnecter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723079ADA23D42DB3D3FC3F5F7550FD4 /* XYConnecter.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4F5F9E57792CCB659F76C49C92CE1CAA /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6182FF4E6F47F029A83537352CCA745 /* ConstraintPriorityTarget.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4FEF040C9D558E8D15B59159A47A095C /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A109EF7258542D8FFE0176126E89B8 /* ConstraintMultiplierTarget.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5658A78165D29DC38FAE85146C1D56E8 /* XYBluetoothKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 569ED4EF80A42491F1B348BD7988F4E3 /* XYBluetoothKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58819138E76A25F8FEFE2957D4BF930A /* Pods-XYBluetoothKitDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 369CF32550ACA062E266361CAAFAB5D8 /* Pods-XYBluetoothKitDemo-dummy.m */; };
+		61771442729570255589A7DBBB8DD842 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93653D5CD67BF6CF23FFAF207E4A5C5E /* ConstraintLayoutGuideDSL.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		63F0D4E6D2BBA21833DA6A63020ABA7C /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0CE98F3B2B79931DD01723CE6FF05 /* ConstraintAttributes.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6403C4007597BC5467F300DA7C9DAF69 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38756FF7212FA5EE24B88D640C13DA41 /* Typealiases.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6732EA847F47B9B0772C5548140FC059 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442F8E8C85BCCC1B93E7C90D49CD98C /* ConstraintPriority.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6B2D594D5225804766AA7CEDCBDCF65A /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C775A82F0DE870DF198FC2B26C711 /* LayoutConstraint.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6BAA7ED36B992BFA2312ABB269243286 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		6BF9415BBC3F91850D2BBE74A3DF2B88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		76A0A961133D9C6C448B7F00CFB45948 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718916989685BE7355AC448179446714 /* ConstraintOffsetTarget.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		78D661BC8D1A7B1D52C96B0B157A0686 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFDEBF210FF9BDD5FA3D8A704E21285 /* ConstraintViewDSL.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7D4C446831E4AC5F0049C50B29090CED /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D12DFC065332DB67C6F726E97AA0F /* ConstraintLayoutGuide.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8193F473B173D0807A9391CE52B453CB /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC6258974E16E867C56851B38A26B05 /* ConstraintLayoutGuide+Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		81ED7EC18361282A8E8801BF428C305A /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103C60ACEC13762D676684A80809E7C /* ConstraintMakerRelatable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		97B94C660725B5171AE515E5545F90AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		A41A38813349A752C4B6501E96136B46 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F9A5B026416C1DBD2B8352A4FC64A /* ConstraintMakerEditable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A82B8E34E6E0356B1E9FE510A3991853 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5327CE365661928B29F35C67A85EDE2E /* ConstraintItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AE3ECA7CA284F8DA65429AE36973D043 /* XYCentralProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4538A293A363C8531854F8E78CC3D5AF /* XYCentralProxy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B4E4CCFB04D6B1BBF22EF43B7C2CD374 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC58CCEF847BD74D140EF0F30059CE4 /* ConstraintRelation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B754AF0389621C5E18559F173368B1F4 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB958590F0F988DCB5EB11E796FE75 /* ConstraintDescription.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BBF7599B76902275806BEA3050731832 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07186D88C1C68BBF79FFA3672C92F99 /* ConstraintRelatableTarget.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BC673DE6E9882066AC72588A0B1C27B8 /* XYBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269996C8C0F261A5299B3F9412DF9C3E /* XYBaseParser.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C2483ABFFD2957CE752A670DC3C4B158 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A1CA8617FEC64AA6434F5F4544CFB5 /* ConstraintLayoutSupportDSL.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C7DEFD53798F0BA5CF25FB046F976DF8 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE612EB448D97CC073AC8FF19D4180A /* ConstraintInsets.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C9578ECDEDB5AD120F4BDF9B162AEA52 /* XYParserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D55E31C57B4B909A9B7469FB2C39E27 /* XYParserSession.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CA9522BAB65092E5D302593D9C8B73E5 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FC8B1F12E47B038528F5F886A6E583 /* LayoutConstraintItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CED06377ABC8DC97F3291F820937947F /* Pods-XYBluetoothKitDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 708155EC4AD619FBCFFA4BCBEBB28928 /* Pods-XYBluetoothKitDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0FBB237AB8B00EC9652829439566B9D /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E23AB08C06174DBF3E9B0C250B2DB52 /* ConstraintView+Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D2CFA63325F0DD9E864CD2FAC71ED587 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C23FF29D62EB6FB4783CB97B29B27AB /* ConstraintView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D9F2A81F453BA1013BFCFF6CE6AEA195 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70607A87BCD2EEA5F910C3A82D3BA5C /* ConstraintInsetTarget.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DDB2073EBAA493652BDE19D05C9193F6 /* XYCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006A0686E7E0EC4D17E117838F3362D /* XYCentralManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F2477BF5BBADDFBA90B87442ADDC8EDD /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985DBF14C793823579F9771BDF08E8D1 /* ConstraintLayoutSupport.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F794611F3F60E639C4CC60C6EB0A26CB /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937E83C0678DD8CAD50E800B6C7E548 /* UILayoutSupport+Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FD650E6821F9D061C7C984280D33927D /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79718EB2DA0B64313B219E5F8FC50CF8 /* ConstraintMakerPriortizable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1592D46DAC6CDAAFAB0D7B0D8669E7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AF815B2ACADA99F27A332F48F0B2EC4;
+			remoteInfo = SnapKit;
+		};
+		D69DFC8C0DC6A7647DFADACB7CD192A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 017C2C81AA994BBAA1B8458E87B42322;
+			remoteInfo = XYBluetoothKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01E5D312DBEE8B24AF0A7BE72EE2BE50 /* Pods-XYBluetoothKitDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XYBluetoothKitDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		15A109EF7258542D8FFE0176126E89B8 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		18BB024D8250C863DCE87E0DFE9FEED6 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		1C23FF29D62EB6FB4783CB97B29B27AB /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		1E23AB08C06174DBF3E9B0C250B2DB52 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		253F9A5B026416C1DBD2B8352A4FC64A /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		269996C8C0F261A5299B3F9412DF9C3E /* XYBaseParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XYBaseParser.swift; path = XYBluetoothKit/XYBaseParser.swift; sourceTree = "<group>"; };
+		3560C92DC3E91F3D02803C244A501E50 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		369CF32550ACA062E266361CAAFAB5D8 /* Pods-XYBluetoothKitDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XYBluetoothKitDemo-dummy.m"; sourceTree = "<group>"; };
+		38756FF7212FA5EE24B88D640C13DA41 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		4538A293A363C8531854F8E78CC3D5AF /* XYCentralProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XYCentralProxy.swift; path = XYBluetoothKit/XYCentralProxy.swift; sourceTree = "<group>"; };
+		4B39114B9EB45026B4721DDA1FEBEAE5 /* XYScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XYScanner.swift; path = XYBluetoothKit/XYScanner.swift; sourceTree = "<group>"; };
+		4C603C4B740C71CE8BEA8E4B17873577 /* Pods_XYBluetoothKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYBluetoothKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D55E31C57B4B909A9B7469FB2C39E27 /* XYParserSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XYParserSession.swift; path = XYBluetoothKit/XYParserSession.swift; sourceTree = "<group>"; };
+		4FC6258974E16E867C56851B38A26B05 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		5327CE365661928B29F35C67A85EDE2E /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		54D3F2D72F56223C8D3C678322937C1C /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		569ED4EF80A42491F1B348BD7988F4E3 /* XYBluetoothKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XYBluetoothKit.h; path = XYBluetoothKit/XYBluetoothKit.h; sourceTree = "<group>"; };
+		5FF7428BBD1705108E7C55321D8C5BB5 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		6ECE11014657D2C967C3BD1984F74A3E /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		708155EC4AD619FBCFFA4BCBEBB28928 /* Pods-XYBluetoothKitDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XYBluetoothKitDemo-umbrella.h"; sourceTree = "<group>"; };
+		718916989685BE7355AC448179446714 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		723079ADA23D42DB3D3FC3F5F7550FD4 /* XYConnecter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XYConnecter.swift; path = XYBluetoothKit/XYConnecter.swift; sourceTree = "<group>"; };
+		753A2E042FAC7B90C0301828F73C4F2D /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		79718EB2DA0B64313B219E5F8FC50CF8 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		7E6C0ADAA125BC695D364FD352BCCB48 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD503801C47E75E1AE63769E35320E4 /* XYBluetoothKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XYBluetoothKit.xcconfig; sourceTree = "<group>"; };
+		80A0CBB96FC3DD3222651173294A6394 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		84CF45F99268204A5FD0EAAD98A97C99 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		8AD72B3181EAEC0446AF4D8056E867ED /* XYBluetoothKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XYBluetoothKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93653D5CD67BF6CF23FFAF207E4A5C5E /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		973636983769C7DF070D60CBE0B65F82 /* Pods-XYBluetoothKitDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XYBluetoothKitDemo-Info.plist"; sourceTree = "<group>"; };
+		985DBF14C793823579F9771BDF08E8D1 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8DB958590F0F988DCB5EB11E796FE75 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		AB131E079EFE1D91AAA7740582746728 /* Pods-XYBluetoothKitDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XYBluetoothKitDemo.modulemap"; sourceTree = "<group>"; };
+		ADC58CCEF847BD74D140EF0F30059CE4 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		B006A0686E7E0EC4D17E117838F3362D /* XYCentralManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XYCentralManager.swift; path = XYBluetoothKit/XYCentralManager.swift; sourceTree = "<group>"; };
+		B29C775A82F0DE870DF198FC2B26C711 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		B472F23A32ECB1F2378F988E5B189344 /* XYBluetoothKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XYBluetoothKit-Info.plist"; sourceTree = "<group>"; };
+		B5B02737A30E07888EF5F383CE2C69FC /* Pods-XYBluetoothKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XYBluetoothKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B6182FF4E6F47F029A83537352CCA745 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		B70607A87BCD2EEA5F910C3A82D3BA5C /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		B857F09D0C750AE386A1A547B67A6654 /* XYBluetoothKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XYBluetoothKit.modulemap; sourceTree = "<group>"; };
+		B8C69BF8BCBA9F801E17B4E6C079218C /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		BFFDEBF210FF9BDD5FA3D8A704E21285 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		C006E80DBECD3D56152636D609345BAD /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		C00D12DFC065332DB67C6F726E97AA0F /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		C1FC8B1F12E47B038528F5F886A6E583 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		C442F8E8C85BCCC1B93E7C90D49CD98C /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		C5A1CA8617FEC64AA6434F5F4544CFB5 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		C5E0CE98F3B2B79931DD01723CE6FF05 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		C6FFEA725907155ADE9FC33032F27E0D /* Pods-XYBluetoothKitDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XYBluetoothKitDemo-frameworks.sh"; sourceTree = "<group>"; };
+		C73D6D22D568124A20969FF6220A7B24 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		C937E83C0678DD8CAD50E800B6C7E548 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D07186D88C1C68BBF79FFA3672C92F99 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		D36960DA6D99BE0DF79DA90758510FA6 /* XYBluetoothKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XYBluetoothKit-prefix.pch"; sourceTree = "<group>"; };
+		E17306D5B24377A07131E264A119AA79 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		E602FBD7690EDBB00856D915C023104B /* Pods-XYBluetoothKitDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XYBluetoothKitDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E9609F48CADFA81366C416120B53AA9B /* XYDiscovery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XYDiscovery.swift; path = XYBluetoothKit/XYDiscovery.swift; sourceTree = "<group>"; };
+		ECB839C8FE0D88E870429EADF2A8F7E9 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		ECE612EB448D97CC073AC8FF19D4180A /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		ED7466E429033F628180F75D04B4006D /* Pods-XYBluetoothKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XYBluetoothKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F103C60ACEC13762D676684A80809E7C /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		F5D0F9056311169708FF457E402FFF1D /* XYBluetoothKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XYBluetoothKit-umbrella.h"; sourceTree = "<group>"; };
+		F5DAC364780F3ED52B05B2E95A3927F3 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		FD077ED2AAAD87F639BDDDC1C8FEC053 /* XYBluetoothKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XYBluetoothKit-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B3CB9D88F306433709BA63DF5D702B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B94C660725B5171AE515E5545F90AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B8AAD89AD6115B9BCA5C89BDCA6C6D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BF9415BBC3F91850D2BBE74A3DF2B88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5AE2AB92F05C1EAC8AFA7CF8DACBB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAA7ED36B992BFA2312ABB269243286 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A2C563DDFEC1EDAB04EE5AB074C9F1F /* Pods-XYBluetoothKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AB131E079EFE1D91AAA7740582746728 /* Pods-XYBluetoothKitDemo.modulemap */,
+				E602FBD7690EDBB00856D915C023104B /* Pods-XYBluetoothKitDemo-acknowledgements.markdown */,
+				01E5D312DBEE8B24AF0A7BE72EE2BE50 /* Pods-XYBluetoothKitDemo-acknowledgements.plist */,
+				369CF32550ACA062E266361CAAFAB5D8 /* Pods-XYBluetoothKitDemo-dummy.m */,
+				C6FFEA725907155ADE9FC33032F27E0D /* Pods-XYBluetoothKitDemo-frameworks.sh */,
+				973636983769C7DF070D60CBE0B65F82 /* Pods-XYBluetoothKitDemo-Info.plist */,
+				708155EC4AD619FBCFFA4BCBEBB28928 /* Pods-XYBluetoothKitDemo-umbrella.h */,
+				B5B02737A30E07888EF5F383CE2C69FC /* Pods-XYBluetoothKitDemo.debug.xcconfig */,
+				ED7466E429033F628180F75D04B4006D /* Pods-XYBluetoothKitDemo.release.xcconfig */,
+			);
+			name = "Pods-XYBluetoothKitDemo";
+			path = "Target Support Files/Pods-XYBluetoothKitDemo";
+			sourceTree = "<group>";
+		};
+		4FE2CBEAA22C5C9595CF755EF74C6B62 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				F5DAC364780F3ED52B05B2E95A3927F3 /* Constraint.swift */,
+				C5E0CE98F3B2B79931DD01723CE6FF05 /* ConstraintAttributes.swift */,
+				6ECE11014657D2C967C3BD1984F74A3E /* ConstraintConfig.swift */,
+				C73D6D22D568124A20969FF6220A7B24 /* ConstraintConstantTarget.swift */,
+				A8DB958590F0F988DCB5EB11E796FE75 /* ConstraintDescription.swift */,
+				3560C92DC3E91F3D02803C244A501E50 /* ConstraintDSL.swift */,
+				ECE612EB448D97CC073AC8FF19D4180A /* ConstraintInsets.swift */,
+				B70607A87BCD2EEA5F910C3A82D3BA5C /* ConstraintInsetTarget.swift */,
+				5327CE365661928B29F35C67A85EDE2E /* ConstraintItem.swift */,
+				C00D12DFC065332DB67C6F726E97AA0F /* ConstraintLayoutGuide.swift */,
+				4FC6258974E16E867C56851B38A26B05 /* ConstraintLayoutGuide+Extensions.swift */,
+				93653D5CD67BF6CF23FFAF207E4A5C5E /* ConstraintLayoutGuideDSL.swift */,
+				985DBF14C793823579F9771BDF08E8D1 /* ConstraintLayoutSupport.swift */,
+				C5A1CA8617FEC64AA6434F5F4544CFB5 /* ConstraintLayoutSupportDSL.swift */,
+				18BB024D8250C863DCE87E0DFE9FEED6 /* ConstraintMaker.swift */,
+				253F9A5B026416C1DBD2B8352A4FC64A /* ConstraintMakerEditable.swift */,
+				753A2E042FAC7B90C0301828F73C4F2D /* ConstraintMakerExtendable.swift */,
+				5FF7428BBD1705108E7C55321D8C5BB5 /* ConstraintMakerFinalizable.swift */,
+				79718EB2DA0B64313B219E5F8FC50CF8 /* ConstraintMakerPriortizable.swift */,
+				F103C60ACEC13762D676684A80809E7C /* ConstraintMakerRelatable.swift */,
+				15A109EF7258542D8FFE0176126E89B8 /* ConstraintMultiplierTarget.swift */,
+				718916989685BE7355AC448179446714 /* ConstraintOffsetTarget.swift */,
+				C442F8E8C85BCCC1B93E7C90D49CD98C /* ConstraintPriority.swift */,
+				B6182FF4E6F47F029A83537352CCA745 /* ConstraintPriorityTarget.swift */,
+				D07186D88C1C68BBF79FFA3672C92F99 /* ConstraintRelatableTarget.swift */,
+				ADC58CCEF847BD74D140EF0F30059CE4 /* ConstraintRelation.swift */,
+				1C23FF29D62EB6FB4783CB97B29B27AB /* ConstraintView.swift */,
+				1E23AB08C06174DBF3E9B0C250B2DB52 /* ConstraintView+Extensions.swift */,
+				BFFDEBF210FF9BDD5FA3D8A704E21285 /* ConstraintViewDSL.swift */,
+				ECB839C8FE0D88E870429EADF2A8F7E9 /* Debugging.swift */,
+				B29C775A82F0DE870DF198FC2B26C711 /* LayoutConstraint.swift */,
+				C1FC8B1F12E47B038528F5F886A6E583 /* LayoutConstraintItem.swift */,
+				38756FF7212FA5EE24B88D640C13DA41 /* Typealiases.swift */,
+				C937E83C0678DD8CAD50E800B6C7E548 /* UILayoutSupport+Extensions.swift */,
+				A5515CF456EBAE13D19985351FE1EB2A /* Support Files */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		5AD19C3293C5BF67083DDDE2F2227275 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A2C563DDFEC1EDAB04EE5AB074C9F1F /* Pods-XYBluetoothKitDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		63B16AECA46E6B875CC01984426A1EA6 /* XYBluetoothKit */ = {
+			isa = PBXGroup;
+			children = (
+				269996C8C0F261A5299B3F9412DF9C3E /* XYBaseParser.swift */,
+				569ED4EF80A42491F1B348BD7988F4E3 /* XYBluetoothKit.h */,
+				B006A0686E7E0EC4D17E117838F3362D /* XYCentralManager.swift */,
+				4538A293A363C8531854F8E78CC3D5AF /* XYCentralProxy.swift */,
+				723079ADA23D42DB3D3FC3F5F7550FD4 /* XYConnecter.swift */,
+				E9609F48CADFA81366C416120B53AA9B /* XYDiscovery.swift */,
+				4D55E31C57B4B909A9B7469FB2C39E27 /* XYParserSession.swift */,
+				4B39114B9EB45026B4721DDA1FEBEAE5 /* XYScanner.swift */,
+				BCDC387C51A19C976E8AA73E23BA7216 /* Support Files */,
+			);
+			path = XYBluetoothKit;
+			sourceTree = "<group>";
+		};
+		7106CBBBFE64C75CBD97DE5475EE1C5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FE2CBEAA22C5C9595CF755EF74C6B62 /* SnapKit */,
+				63B16AECA46E6B875CC01984426A1EA6 /* XYBluetoothKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81141D39D86133623F684DCADD8B5E9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C603C4B740C71CE8BEA8E4B17873577 /* Pods_XYBluetoothKitDemo.framework */,
+				7E6C0ADAA125BC695D364FD352BCCB48 /* SnapKit.framework */,
+				8AD72B3181EAEC0446AF4D8056E867ED /* XYBluetoothKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A5515CF456EBAE13D19985351FE1EB2A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C006E80DBECD3D56152636D609345BAD /* SnapKit.modulemap */,
+				80A0CBB96FC3DD3222651173294A6394 /* SnapKit.xcconfig */,
+				B8C69BF8BCBA9F801E17B4E6C079218C /* SnapKit-dummy.m */,
+				E17306D5B24377A07131E264A119AA79 /* SnapKit-Info.plist */,
+				84CF45F99268204A5FD0EAAD98A97C99 /* SnapKit-prefix.pch */,
+				54D3F2D72F56223C8D3C678322937C1C /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		BCDC387C51A19C976E8AA73E23BA7216 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B857F09D0C750AE386A1A547B67A6654 /* XYBluetoothKit.modulemap */,
+				7FD503801C47E75E1AE63769E35320E4 /* XYBluetoothKit.xcconfig */,
+				FD077ED2AAAD87F639BDDDC1C8FEC053 /* XYBluetoothKit-dummy.m */,
+				B472F23A32ECB1F2378F988E5B189344 /* XYBluetoothKit-Info.plist */,
+				D36960DA6D99BE0DF79DA90758510FA6 /* XYBluetoothKit-prefix.pch */,
+				F5D0F9056311169708FF457E402FFF1D /* XYBluetoothKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XYBluetoothKit";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				7106CBBBFE64C75CBD97DE5475EE1C5A /* Pods */,
+				81141D39D86133623F684DCADD8B5E9E /* Products */,
+				5AD19C3293C5BF67083DDDE2F2227275 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1C928DBDD3D99B7E1A5B131288D0A671 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1061A74AEBBD9B887D3748AABC1469B6 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC47D391B9D7509C84ECCB76B97D729B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED06377ABC8DC97F3291F820937947F /* Pods-XYBluetoothKitDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCA5D0D2CBC6AEC84896CAD2D210789 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186370977023B163FD34852326867024 /* XYBluetoothKit-umbrella.h in Headers */,
+				5658A78165D29DC38FAE85146C1D56E8 /* XYBluetoothKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		017C2C81AA994BBAA1B8458E87B42322 /* XYBluetoothKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D2E40A91E6E6021F12A9D36194ED929 /* Build configuration list for PBXNativeTarget "XYBluetoothKit" */;
+			buildPhases = (
+				ADCA5D0D2CBC6AEC84896CAD2D210789 /* Headers */,
+				E9B136A3856766CCACF119537493617A /* Sources */,
+				4B8AAD89AD6115B9BCA5C89BDCA6C6D4 /* Frameworks */,
+				D1C84AFDC07D69D28F19A7267A5C8E81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYBluetoothKit;
+			productName = XYBluetoothKit;
+			productReference = 8AD72B3181EAEC0446AF4D8056E867ED /* XYBluetoothKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0AB25C53B95FD8922BCD18D4985CE570 /* Pods-XYBluetoothKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FD511A694C78B065165CC2EAD6A597D /* Build configuration list for PBXNativeTarget "Pods-XYBluetoothKitDemo" */;
+			buildPhases = (
+				AC47D391B9D7509C84ECCB76B97D729B /* Headers */,
+				51371CB5D01C9256D88A826F0DC0915B /* Sources */,
+				7C5AE2AB92F05C1EAC8AFA7CF8DACBB7 /* Frameworks */,
+				0BE56FBE948CEF8D6E7E6CA6AF28488C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75B2AF00E5FB4E5280CB3BE8A03478EA /* PBXTargetDependency */,
+				E11D1A67FB4624543FDAFDC99C41965E /* PBXTargetDependency */,
+			);
+			name = "Pods-XYBluetoothKitDemo";
+			productName = "Pods-XYBluetoothKitDemo";
+			productReference = 4C603C4B740C71CE8BEA8E4B17873577 /* Pods_XYBluetoothKitDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8AF815B2ACADA99F27A332F48F0B2EC4 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF4400BFFED151D0A1CB8FA5C7401585 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				1C928DBDD3D99B7E1A5B131288D0A671 /* Headers */,
+				6CC2EB565BDD6727409BAE865120C8B5 /* Sources */,
+				4B3CB9D88F306433709BA63DF5D702B8 /* Frameworks */,
+				AB5EBB8442E8AA8A0778AE762E3725D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 7E6C0ADAA125BC695D364FD352BCCB48 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 81141D39D86133623F684DCADD8B5E9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AB25C53B95FD8922BCD18D4985CE570 /* Pods-XYBluetoothKitDemo */,
+				8AF815B2ACADA99F27A332F48F0B2EC4 /* SnapKit */,
+				017C2C81AA994BBAA1B8458E87B42322 /* XYBluetoothKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BE56FBE948CEF8D6E7E6CA6AF28488C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB5EBB8442E8AA8A0778AE762E3725D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C84AFDC07D69D28F19A7267A5C8E81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51371CB5D01C9256D88A826F0DC0915B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58819138E76A25F8FEFE2957D4BF930A /* Pods-XYBluetoothKitDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CC2EB565BDD6727409BAE865120C8B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B64E11DD62AC16082ED414753118091 /* Constraint.swift in Sources */,
+				63F0D4E6D2BBA21833DA6A63020ABA7C /* ConstraintAttributes.swift in Sources */,
+				095B9E169090B5D05139300C094DA5AA /* ConstraintConfig.swift in Sources */,
+				43D901BD18F329552A437B9B854B1C52 /* ConstraintConstantTarget.swift in Sources */,
+				B754AF0389621C5E18559F173368B1F4 /* ConstraintDescription.swift in Sources */,
+				32454A63B17E5726C66A1176EE69E514 /* ConstraintDSL.swift in Sources */,
+				C7DEFD53798F0BA5CF25FB046F976DF8 /* ConstraintInsets.swift in Sources */,
+				D9F2A81F453BA1013BFCFF6CE6AEA195 /* ConstraintInsetTarget.swift in Sources */,
+				A82B8E34E6E0356B1E9FE510A3991853 /* ConstraintItem.swift in Sources */,
+				8193F473B173D0807A9391CE52B453CB /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				7D4C446831E4AC5F0049C50B29090CED /* ConstraintLayoutGuide.swift in Sources */,
+				61771442729570255589A7DBBB8DD842 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				F2477BF5BBADDFBA90B87442ADDC8EDD /* ConstraintLayoutSupport.swift in Sources */,
+				C2483ABFFD2957CE752A670DC3C4B158 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				19F41CF833443D4E911800C7847B6FD1 /* ConstraintMaker.swift in Sources */,
+				A41A38813349A752C4B6501E96136B46 /* ConstraintMakerEditable.swift in Sources */,
+				2F0CA09A62DD79CC821B9FAC6D6416CD /* ConstraintMakerExtendable.swift in Sources */,
+				26B2B1966F48DE2AB75D04B81881BE0B /* ConstraintMakerFinalizable.swift in Sources */,
+				FD650E6821F9D061C7C984280D33927D /* ConstraintMakerPriortizable.swift in Sources */,
+				81ED7EC18361282A8E8801BF428C305A /* ConstraintMakerRelatable.swift in Sources */,
+				4FEF040C9D558E8D15B59159A47A095C /* ConstraintMultiplierTarget.swift in Sources */,
+				76A0A961133D9C6C448B7F00CFB45948 /* ConstraintOffsetTarget.swift in Sources */,
+				6732EA847F47B9B0772C5548140FC059 /* ConstraintPriority.swift in Sources */,
+				4F5F9E57792CCB659F76C49C92CE1CAA /* ConstraintPriorityTarget.swift in Sources */,
+				BBF7599B76902275806BEA3050731832 /* ConstraintRelatableTarget.swift in Sources */,
+				B4E4CCFB04D6B1BBF22EF43B7C2CD374 /* ConstraintRelation.swift in Sources */,
+				D0FBB237AB8B00EC9652829439566B9D /* ConstraintView+Extensions.swift in Sources */,
+				D2CFA63325F0DD9E864CD2FAC71ED587 /* ConstraintView.swift in Sources */,
+				78D661BC8D1A7B1D52C96B0B157A0686 /* ConstraintViewDSL.swift in Sources */,
+				47D741DDC23D66C1702DCD93C6E10A37 /* Debugging.swift in Sources */,
+				6B2D594D5225804766AA7CEDCBDCF65A /* LayoutConstraint.swift in Sources */,
+				CA9522BAB65092E5D302593D9C8B73E5 /* LayoutConstraintItem.swift in Sources */,
+				1AA218054E605C266AF2736D333200B2 /* SnapKit-dummy.m in Sources */,
+				6403C4007597BC5467F300DA7C9DAF69 /* Typealiases.swift in Sources */,
+				F794611F3F60E639C4CC60C6EB0A26CB /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B136A3856766CCACF119537493617A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC673DE6E9882066AC72588A0B1C27B8 /* XYBaseParser.swift in Sources */,
+				212BA4C8833C19731E334F1C8182FA07 /* XYBluetoothKit-dummy.m in Sources */,
+				DDB2073EBAA493652BDE19D05C9193F6 /* XYCentralManager.swift in Sources */,
+				AE3ECA7CA284F8DA65429AE36973D043 /* XYCentralProxy.swift in Sources */,
+				49935C33E1EC76079F9767A50E5FDDDD /* XYConnecter.swift in Sources */,
+				1AC772C1EC733C9B23525FEF62C0E6F5 /* XYDiscovery.swift in Sources */,
+				C9578ECDEDB5AD120F4BDF9B162AEA52 /* XYParserSession.swift in Sources */,
+				2B07743131A768BE8AFFB188B786AFA4 /* XYScanner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75B2AF00E5FB4E5280CB3BE8A03478EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 8AF815B2ACADA99F27A332F48F0B2EC4 /* SnapKit */;
+			targetProxy = C1592D46DAC6CDAAFAB0D7B0D8669E7D /* PBXContainerItemProxy */;
+		};
+		E11D1A67FB4624543FDAFDC99C41965E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XYBluetoothKit;
+			target = 017C2C81AA994BBAA1B8458E87B42322 /* XYBluetoothKit */;
+			targetProxy = D69DFC8C0DC6A7647DFADACB7CD192A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07488D4657FB0A78086563621D425F8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6684CABAD388941F2FAD99CD96B18751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7466E429033F628180F75D04B4006D /* Pods-XYBluetoothKitDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XYBluetoothKitDemo/Pods-XYBluetoothKitDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XYBluetoothKitDemo/Pods-XYBluetoothKitDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7D75F37EB08EF2025C31CA0FC575207D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A0CBB96FC3DD3222651173294A6394 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B439EBA5E202A7F70477C827EDF83417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A0CBB96FC3DD3222651173294A6394 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D1A04C59CA8736EE571CEDB851A280AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD503801C47E75E1AE63769E35320E4 /* XYBluetoothKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XYBluetoothKit/XYBluetoothKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XYBluetoothKit/XYBluetoothKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XYBluetoothKit/XYBluetoothKit.modulemap";
+				PRODUCT_MODULE_NAME = XYBluetoothKit;
+				PRODUCT_NAME = XYBluetoothKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E95DE371932D8A5F478F314342DD9850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B02737A30E07888EF5F383CE2C69FC /* Pods-XYBluetoothKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XYBluetoothKitDemo/Pods-XYBluetoothKitDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XYBluetoothKitDemo/Pods-XYBluetoothKitDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE8C3705DD67EC1DBC65610BC1CAB849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD503801C47E75E1AE63769E35320E4 /* XYBluetoothKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XYBluetoothKit/XYBluetoothKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XYBluetoothKit/XYBluetoothKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XYBluetoothKit/XYBluetoothKit.modulemap";
+				PRODUCT_MODULE_NAME = XYBluetoothKit;
+				PRODUCT_NAME = XYBluetoothKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07488D4657FB0A78086563621D425F8A /* Debug */,
+				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D2E40A91E6E6021F12A9D36194ED929 /* Build configuration list for PBXNativeTarget "XYBluetoothKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8C3705DD67EC1DBC65610BC1CAB849 /* Debug */,
+				D1A04C59CA8736EE571CEDB851A280AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FD511A694C78B065165CC2EAD6A597D /* Build configuration list for PBXNativeTarget "Pods-XYBluetoothKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95DE371932D8A5F478F314342DD9850 /* Debug */,
+				6684CABAD388941F2FAD99CD96B18751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF4400BFFED151D0A1CB8FA5C7401585 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B439EBA5E202A7F70477C827EDF83417 /* Debug */,
+				7D75F37EB08EF2025C31CA0FC575207D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module XYBluetoothKit {
+  umbrella header "XYBluetoothKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

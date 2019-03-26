@@ -1,0 +1,6 @@
+framework module Pods_XYBluetoothKitDemo {
+  umbrella header "Pods-XYBluetoothKitDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

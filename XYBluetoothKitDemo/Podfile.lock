@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (4.2.0)
+  - XYBluetoothKit (1.0.6)
+
+DEPENDENCIES:
+  - SnapKit (~> 4.2.0)
+  - XYBluetoothKit (~> 1.0.6)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
+    - XYBluetoothKit
+
+SPEC CHECKSUMS:
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  XYBluetoothKit: ef9c2476c4d602775812adf76337be6ecaf91fcf
+
+PODFILE CHECKSUM: bd37be0f864938fd14889627b46a9fa929ccb674
+
+COCOAPODS: 1.6.1
