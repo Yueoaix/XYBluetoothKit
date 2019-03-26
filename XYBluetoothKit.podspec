@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XYBluetoothKit"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "一个简单易用的蓝牙框架。"
 
   # This description is used to generate tags and improve search results.
