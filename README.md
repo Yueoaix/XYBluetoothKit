@@ -3,7 +3,7 @@
 
 ## Pods Install
 
-``` pod 'XYBluetoothKit', '~> 1.0.5' ```
+``` pod 'XYBluetoothKit', '~> 1.0.6' ```
 
 ## 如何使用
 
